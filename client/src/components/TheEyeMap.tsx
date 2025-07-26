@@ -137,15 +137,19 @@ const InteractiveMap: React.FC = () => {
           className="base-map"
         />
 
-        {hoveredLegend && selectedMap === "Political Map" && (
-          <img
-            src={
-              PoliticalOverlays.find((o) => o.name === hoveredLegend)?.image
-            }
-            alt={hoveredLegend}
-            className="overlay-map"
-          />
+        {selectedMap === "Political Map" && hoveredLegend && (
+            (() => {
+                const overlay = PoliticalOverlays.find((o) => o.name === hoveredLegend);
+                return overlay ? (
+                <img
+                    src={overlay.image}
+                    alt={overlay.label}
+                    className="overlay-map"
+                />
+                ) : null;
+            })()
         )}
+
 
         {visiblePOIs.map((poi) => (
           <div
