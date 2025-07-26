@@ -2,54 +2,10 @@ import React, { useState } from "react";
 
 import '../styles/TheEyeMap.css';
 
-interface MapItem {
-  name: string;
-  label: string;
-  image: string;
-}
+import { Maps, POIs, PoliticalOverlays } from "./TheEyeMapData";
 
-interface POI {
-  name: string;
-  label: string;
-  x: number;
-  y: number;
-}
-
-interface Overlay {
-  name: string;
-  label: string;
-  image: string;
-}
 
 const InteractiveMap: React.FC = () => {
-  const Maps: MapItem[] = [
-    { name: "Default Map", label: "Default", image: "../images/maps/TheEyeMap/Default-Map.png" },
-    { name: "Political Map", label: "Political", image: "../images/maps/TheEyeMap/Political-Base.png" },
-    { name: "Architectural Map", label: "Architectural", image: "../images/maps/TheEyeMap/Architectural-Map.png" },
-  ];
-
-  // POI positions need to be adjusted based on the actual map dimensions (likely using percentages)
-  const POIs: POI[] = [
-    { name: "Broadsheet Press", label: "Other", x: 150, y: 240 },
-    { name: "The Matron's Tower", label: "Residence", x: 81, y: 395 },
-    { name: "Xeriman's First Estate", label: "Residence", x: 420, y: 360 },
-    { name: "Golden Grin Theatre", label: "Entertainment", x: 500, y: 300 },
-  ];
-
-  const PoliticalOverlays: Overlay[] = [
-    { name: "Bartlett-Sectional", label: "Prince Bartlett", image: "../images/maps/TheEyeMap/Bartlett-Sectional.png" },
-    { name: "Treasury-Sectional", label: "Treasury Guild", image: "../images/maps/TheEyeMap/Treasury-Sectional.png" },
-    { name: "Gear-Sectional", label: "Crystal Gear Factories", image: "../images/maps/TheEyeMap/Gear-Sectional.png" },
-    { name: "Casho-Sectional", label: "House Casho", image: "../images/maps/TheEyeMap/Casho-Sectional.png" },
-    { name: "Emrin-Sectional", label: "House Emrin", image: "../images/maps/TheEyeMap/Emrin-Sectional.png" },
-    { name: "Mabre-Sectional", label: "House Mabre", image: "../images/maps/TheEyeMap/Mabre-Sectional.png" },
-    { name: "Babel-Sectional", label: "Guild of Babel", image: "../images/maps/TheEyeMap/Babel-Sectional.png" },
-    { name: "Theatre-Sectional", label: "Theatre Union", image: "../images/maps/TheEyeMap/Theatre-Sectional.png" },
-    { name: "Conveyence-Sectional", label: "Conveyence Circulation", image: "../images/maps/TheEyeMap/Conveyence-Sectional.png" },
-    { name: "Xeriman-Sectional", label: "House Xeriman", image: "../images/maps/TheEyeMap/Xeriman-Sectional.png" },
-    { name: "Matron-Sectional", label: "The Matron", image: "../images/maps/TheEyeMap/Matron-Sectional.png" },
-  ];
-
   const categories = Array.from(new Set(POIs.map((poi) => poi.label)));
 
   const [selectedMap, setSelectedMap] = useState<string>(Maps[0].name);
