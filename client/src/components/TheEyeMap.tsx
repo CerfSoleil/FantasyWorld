@@ -111,7 +111,10 @@ const InteractiveMap: React.FC = () => {
           <div
             key={poi.name}
             className={`poi-dot ${hoveredPOI === poi.name ? "hovered" : ""}`}
-            style={{ left: poi.x, top: poi.y }}
+            style={{ 
+                left: `${poi.x}%`, 
+                top: `${poi.y}%`
+            }}
             title={poi.name}
           />
         ))}
