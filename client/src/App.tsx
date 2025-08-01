@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import CharacterCreation from './pages/CharacterCreation';
 
 import Classes from './pages/Classes';
+import Species from './pages/Species';
+import Origins from './pages/Origins';
 
 import Maps from './pages/Maps';
 import TheEyeMap from './components/TheEyeMap';
@@ -22,10 +24,11 @@ function App() {
             <Route path="/" element={<Home />} />
             {/* Character Creation */}
             <Route path="/character-creation" element={<CharacterCreation />} />
-            {/* Class Page */}
             <Route path="/classes" element={<Classes />} />
-            {/* Subclass Landing Page */}
-            <Route path="/classes/subclasses" element={<CharacterCreation />} />
+            <Route path="/species" element={<Species />} />
+            <Route path="/origins" element={<Origins />} />
+            {/* Lore */}
+            {/* Gods */}
             {/* Maps */}
             <Route path="/maps" element={<Maps />} />
             <Route path="/maps/TheEye" element={<TheEyeMap />} />
