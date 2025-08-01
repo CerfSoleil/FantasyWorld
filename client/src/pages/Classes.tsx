@@ -1,5 +1,5 @@
 
-
+/////// Do all of this as seperate components. Descriptor card, Class Table, Core Traits + Multiclassing, and the abilities in full.
 // Data and Sources
 //// For the Card
 // Info from [Class]
