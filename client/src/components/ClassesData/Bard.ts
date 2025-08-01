@@ -1,20 +1,26 @@
-// Table should be something like...
-// [Level], [Proficiency Bonus], [Feature1?, Feature2?, Feature3?], [Bardic Die], [Cantrips], [Prepared Spells], [Spell Slots: 1st, 2nd, 3rd, through 9th]
-
-export interface BardCard {
-    className: string;
-    hitDie: string;
-    description: string;
-    castingType: string;
-};
+// Information gotten from here
+// For the Class Card: BardCard
+// For the Table: BardCard[castingType], Bard Level Data
+// For the Level Guide: BardLevelData
+import { ClassBase } from "./ClassBase"
 
 export const ClassCredits = "This class belongs to Dungeons & Dragons 5th Edition, and is not an original work. All rights to the original content belong to Wizards of the Coast.";
 
-export const bardCard: BardCard = {
+export const bardCard: ClassBase = {
     className: "Bard",
     hitDie: "d8",
     description: "Bards are versatile spellcasters and performers, using their musical talents to inspire allies and manipulate foes. They can cast spells, heal, and provide support in various ways. Bards are known for their charisma and ability to charm others.",
-    castingType: "FullCasting"
+    castingType: "FullCasting",
+    primaryAbility: "Charisma",
+    savingThrowProf: ["Dexterity", "Charisma"],
+    skillProf: ["Choose 3"],
+    weaponProf: ["Simple Weapons"],
+    toolProf: ["Choose 3 Musical Instruments"],
+    armorProf: ["Light Armor"],
+    startingEquip: [["Leather Armor, 2x Dagger, Musical Instrument of your Choice, Entertainer's Pack, 19gp"], ["90gp"]],
+    multiSkillProf: ["Choose 1"],
+    multiToolProf: ["Choose one Musical Instrument"],
+    multiArmorProf: ["Light Armor"]
 };  
 
 export interface BardLevelData {
