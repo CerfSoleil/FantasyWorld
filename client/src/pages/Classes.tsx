@@ -2,8 +2,8 @@
 
 // Data and Sources
 //// For the Card
-// Info from [Class], if casting type is defined read primaryAbility as Casting Ability
-// Only show Class Name, Class Description, , Hit Dice, Primary ability
+// Info from [Class]
+// Only show Class Name, Class Description, Hit Dice, Primary ability
 //// For the Table
 // Proficiency from GeneralLevelData
 // Spell information from CasterTypes, but defined in [Class] or [Class]Subclasses
