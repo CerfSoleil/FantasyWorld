@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import '../styles/TheEyeMap.css';
 
-import { Maps, POIs, PoliticalOverlays } from "./TheEyeMapData";
+import { Maps, POIs, DemographicOverlays, PoliticalOverlays } from "./TheEyeMapData";
 
 
 const InteractiveMap: React.FC = () => {
@@ -92,6 +92,19 @@ const InteractiveMap: React.FC = () => {
           alt={selectedMap}
           className="base-map"
         />
+
+        {selectedMap === "Default Map" && hoveredLegend && (
+            (() => {
+                const overlay = DemographicOverlays.find((o) => o.name === hoveredLegend);
+                return overlay ? (
+                <img
+                    src={overlay.image}
+                    alt={overlay.label}
+                    className="overlay-map"
+                />
+                ) : null;
+            })()
+        )}
 
         {selectedMap === "Political Map" && hoveredLegend && (
             (() => {
