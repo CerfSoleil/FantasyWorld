@@ -1,4 +1,12 @@
 
+
+// Data and Sources
+//// For the Table
+// Proficiency from GeneralLevelData
+// Spell information from CasterTypes, but defined in [Class] or [Class]Subclasses
+// Feature information from [Class] and togglable from [Class]Subclasses
+///// For the Listed Levels
+// Feature information from [Class] and togglable from [Class]Subclasses
 function Classes() {
   return (
     <div className="ClassPage">
