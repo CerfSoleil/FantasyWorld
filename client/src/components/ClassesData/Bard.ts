@@ -6,7 +6,7 @@ import { ClassBase } from "./ClassBase"
 
 export const ClassCredits = "This class belongs to Dungeons & Dragons 5th Edition, and is not an original work. All rights to the original content belong to Wizards of the Coast.";
 
-export const bardCard: ClassBase = {
+export const bardClass: ClassBase = {
     className: "Bard",
     hitDie: "d8",
     description: "Bards are versatile spellcasters and performers, using their musical talents to inspire allies and manipulate foes. They can cast spells, heal, and provide support in various ways. Bards are known for their charisma and ability to charm others.",

@@ -7,6 +7,7 @@ export const RogueArcaneTrickster: SubclassBase = {
     subclassName: "Arcane Trickster",
     description: "The Arcane Trickster is a rogue who blends stealth and magic, using spells to enhance their thievery and deception. They are skilled in illusion and enchantment magic, allowing them to manipulate their surroundings and outsmart their foes.",
     casterType: "ThirdCasting",
+    castingAbility: "Intelligence",
     features: [
         {
             level: 3,

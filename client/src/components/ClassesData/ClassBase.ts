@@ -3,6 +3,7 @@ export interface ClassBase {
     hitDie: string;
     description: string;
     castingType?: string;
+    castingAbility?: string;
     primaryAbility: string;
     savingThrowProf: string[];
     skillProf: string[];
@@ -20,6 +21,8 @@ export interface SubclassBase {
     subclassName: string;
     description: string;
     casterType?: string;
+    castingAbility?: string;
+    subclassSpells?: string[][];
     features: {
         level: number;
         subclassFeature1: string[];
