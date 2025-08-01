@@ -7,6 +7,8 @@ export interface BardCard {
     description: string;
 };
 
+export const ClassCredits = "This class belongs to Dungeons & Dragons 5th Edition, and is not an original work. All rights to the original content belong to Wizards of the Coast.";
+
 export const bardCard: BardCard = {
     className: "Bard",
     hitDie: "d8",
@@ -16,7 +18,7 @@ export const bardCard: BardCard = {
 export interface BardLevelData {
     level: number;
     profBonus: number;
-    feature1: string[];
+    feature1?: string[];
     feature2?: string[];
     feature3?: string[];
     bardDice: string;
@@ -75,7 +77,7 @@ export const bardLevels: BardLevelData[] = [
     {
         level: 3,
         profBonus: 2,
-        feature1: ["Bard Subclass",
+        feature1: ["Bard Subclass Feature",
             `You gain a Bard subclass of your choice. A subclass is a specialization that grants you features at certain Bard levels. For the rest of your career, you gain each of your subclass's features that are of your Bard level or lower.<br>
             Select a Subclass to see its features.`
         ],
@@ -84,4 +86,182 @@ export const bardLevels: BardLevelData[] = [
         preparedSpells: 6,
         spellSlots: [4, 2, 0, 0, 0, 0, 0, 0, 0]
     },
+    { 
+        level: 4,
+        profBonus: 2,
+        feature1: ["Ability Score Improvement",
+            "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify."
+        ],
+        bardDice: "d6",
+        cantrips: 3,
+        preparedSpells: 7,
+        spellSlots: [4, 3, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+        level: 5,
+        profBonus: 3,
+        feature1: ["Font of Inspiration",
+            `You now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.
+            In addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.`
+        ],
+        bardDice: "d8",
+        cantrips: 3,
+        preparedSpells: 9,
+        spellSlots: [4, 3, 2, 0, 0, 0, 0, 0, 0]
+    },
+    {
+        level: 6,
+        profBonus: 3,
+        feature1: ["Bard Subclass Feature",
+            `You gain a Bard subclass of your choice. A subclass is a specialization that grants you features at certain Bard levels. For the rest of your career, you gain each of your subclass's features that are of your Bard level or lower.<br>
+            Select a Subclass to see its features.`
+        ],
+        bardDice: "d8",
+        cantrips: 3,
+        preparedSpells: 10,
+        spellSlots: [4, 3, 3, 0, 0, 0, 0, 0, 0]
+    },
+    {
+        level: 7,
+        profBonus: 3,
+        feature1: ["Countercharm",
+            "You can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage."
+        ],
+        bardDice: "d8",
+        cantrips: 3,
+        preparedSpells: 11,
+        spellSlots: [4, 3, 3, 1, 0, 0, 0, 0, 0]
+    },
+    {
+        level: 8,
+        profBonus: 3,
+        feature1: ["Ability Score Improvement",
+            "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify."
+        ],
+        bardDice: "d8",
+        cantrips: 4,
+        preparedSpells: 12,
+        spellSlots: [4, 3, 3, 2, 0, 0, 0, 0, 0]
+    },
+    {
+        level: 9,
+        profBonus: 3,
+        feature1: ["Expertise",
+            "You gain Expertise in two of your Skill Proficiencies of your choice."
+        ],
+        bardDice: "d8",
+        cantrips: 4,
+        preparedSpells: 14,
+        spellSlots: [4, 3, 3, 3, 1, 0, 0, 0, 0]
+    },
+    {
+        level: 10,
+        profBonus: 4,
+        feature1: ["Magical Secrets",
+            "You've learned secrets from various magical traditions. Whenever you reach a Bard level (including this level) and the Prepared Spells number in the Bard Features table increases, you can choose any of your new prepared spells from the Bard, Cleric, Druid, and Wizard spell lists, and the chosen spells count as Bard spells for you (see a class's section for its spell list). In addition, whenever you replace a spell prepared for this class, you can replace it with a spell from those lists."
+        ],
+        bardDice: "d10",
+        cantrips: 4,
+        preparedSpells: 15,
+        spellSlots: [4, 3, 3, 3, 2, 0, 0, 0, 0]
+    },
+    {
+        level: 11,
+        profBonus: 4,
+        bardDice: "d10",
+        cantrips: 4,
+        preparedSpells: 16,
+        spellSlots: [4, 3, 3, 3, 2, 1, 0, 0, 0]
+    },
+    {
+        level: 12,
+        profBonus: 4,
+        feature1: ["Ability Score Improvement",
+            "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify."
+        ],
+        bardDice: "d10",
+        cantrips: 4,
+        preparedSpells: 16,
+        spellSlots: [4, 3, 3, 3, 2, 1, 0, 0, 0]
+    },
+    {
+        level: 13,
+        profBonus: 5,
+        bardDice: "d10",
+        cantrips: 4,
+        preparedSpells: 17,
+        spellSlots: [4, 3, 3, 3, 2, 1, 1, 0, 0]
+    },
+    {
+        level: 14,
+        profBonus: 5,
+        feature1: ["Bard Subclass Feature",
+            `You gain a Bard subclass of your choice. A subclass is a specialization that grants you features at certain Bard levels. For the rest of your career, you gain each of your subclass's features that are of your Bard level or lower.<br>
+            Select a Subclass to see its features.`
+        ],
+        bardDice: "d10",
+        cantrips: 4,
+        preparedSpells: 17,
+        spellSlots: [4, 3, 3, 3, 2, 1, 1, 0, 0]
+    },
+    {
+        level: 15,
+        profBonus: 5,
+        bardDice: "d12",
+        cantrips: 4,
+        preparedSpells: 18,
+        spellSlots: [4, 3, 3, 3, 2, 1, 1, 1, 0]
+    },
+    {
+        level: 16,
+        profBonus: 5,
+        feature1: ["Ability Score Improvement",
+            "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify."
+        ],
+        bardDice: "d12",
+        cantrips: 4,
+        preparedSpells: 18,
+        spellSlots: [4, 3, 3, 3, 2, 1, 1, 1, 0]
+    },
+    {
+        level: 17,
+        profBonus: 6,
+        bardDice: "d12",
+        cantrips: 4,
+        preparedSpells: 19,
+        spellSlots: [4, 3, 3, 3, 2, 1, 1, 1, 1]
+    },
+    {
+        level: 18,
+        profBonus: 6,
+        feature1: ["Superior Inspiration",
+            "When you roll Initiative, you regain expended uses of Bardic Inspiration until you have two if you have fewer than that."
+        ],
+        bardDice: "d12",
+        cantrips: 4,
+        preparedSpells: 20,
+        spellSlots: [4, 3, 3, 3, 3, 1, 1, 1, 1]
+    },
+    {
+        level: 19,
+        profBonus: 6,
+        feature1: ["Epic Boon",
+        "You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Spell Recall is recommended."
+        ],
+        bardDice: "d12",
+        cantrips: 4,
+        preparedSpells: 21,
+        spellSlots: [4, 3, 3, 3, 3, 2, 1, 1, 1]
+    },
+    {
+        level: 20,
+        profBonus: 6,
+        feature1: ["Words of Creation",
+            "You have mastered two of the Words of Creation: the words of life and death. You therefore always have the Power Word Heal and Power Word Kill spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target."
+        ],
+        bardDice: "d12",
+        cantrips: 4,
+        preparedSpells: 22,
+        spellSlots: [4, 3, 3, 3, 3, 2, 2, 1, 1]
+    }
 ]
