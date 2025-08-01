@@ -1,19 +1,9 @@
-export interface BardSubclasses {
-    subclassName: string;
-    description: string;
-    features: {
-        level: number;
-        subclassFeature1: string[];
-        subclassFeature2?: string[];
-        subclassFeature3?: string[];
-    }[]
-    subclassCredits: string;
-}
+import { SubclassBase } from "./ClassBase";
 
 // Custom Subclasses
 //
 // College of Culture
-export const BardCulture = {
+export const BardCulture: SubclassBase = {
     subclassName: "College of Culture",
     description: "Bards of the College of Culture are light and nimble artists whose tales are told through the fanciful skill of dancing. These bards perform with the assistance of their instrumental kin to attract the eye of those passing by and leave a story of cultures far and wide. They travel the land, often nomads, to gather the knowledge and traditions of those they come across. With their entrancing dance and inclusive teachings, they inspire others to practice these traditions.",
     features: [
@@ -46,7 +36,7 @@ export const BardCulture = {
 }
 
 // College of Synesthesia
-export const BardSynesthesia = {
+export const BardSynesthesia: SubclassBase = {
     subclassName: "College of Synesthesia",
     description: `Bards of the College of Synesthesia are artists who use their music to create vivid and immersive experiences. They cross sound, color, and feeling to captivate their audience, allowing people to feel things they've never seen. These bards are known for their unique ability to evoke strong sensory responses through their performances.<br> 
                 "With them, I saw a new world. Or the same one, through new eyes. Ears? Anyhow it was wonderful, and a little frightening how music could spill so much blood. I may need to work on my illusion spells..." - Gaius Evergill, triton conjuration wizard`,
