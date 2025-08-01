@@ -14,6 +14,12 @@ export interface POI {
     y: number;
 }
 
+export interface DemoOverlay {
+    name: string;
+    label: string;
+    image: string;
+}
+
 export interface Overlay {
     name: string;
     label: string;
@@ -107,6 +113,17 @@ export const POIs: POI[] = [
     { name: "Xeriman's Second Estate", label: "Residence", district: "3F", x: 50, y: 50 },
     { name: "Gunther's Stables", label: "Shop", district: "4F", x: 50, y: 50 },
 ];
+
+export const DemographicOverlays: DemoOverlay[] = [
+    { name: "The Sail", label: "The Sail", image: "../images/maps/TheEyeMap/Sail-Overlay.png" },
+    { name: "The Books", label: "The Books", image: "../images/maps/TheEyeMap/Books-Overlay.png" },
+    { name: "The Peninsula", label: "The Peninsula", image: "../images/maps/TheEyeMap/Peninsula-Overlay.png" },
+    { name: "The Gods", label: "The Gods", image: "../images/maps/TheEyeMap/Gods-Overlay.png" },
+    { name: "The Chariot", label: "The Chariot", image: "../images/maps/TheEyeMap/Chariot-Overlay.png" },
+    { name: "The Shavings", label: "The Shavings", image: "../images/maps/TheEyeMap/Shavings-Overlay.png" },
+    { name: "The Foxes", label: "The Foxes", image: "../images/maps/TheEyeMap/Foxes-Overlay.png" },
+    { name: "The Flag", label: "The Flag", image: "../images/maps/TheEyeMap/Flag-Overlay.png" },
+]
 
 export const PoliticalOverlays: Overlay[] = [
     { name: "Bartlett-Sectional", label: "Prince Bartlett", image: "../images/maps/TheEyeMap/Bartlett-Sectional.png" },
