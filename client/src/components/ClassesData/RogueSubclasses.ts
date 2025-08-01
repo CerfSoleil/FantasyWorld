@@ -1,20 +1,9 @@
-export interface RogueSubclass {
-    subclassName: string;
-    description: string;
-    casterType?: string;
-    features: {
-        level: number;
-        subclassFeature1?: string[];
-        subclassFeature2?: string[];
-        subclassFeature3?: string[];
-    }[]
-    subclassCredits: string;
-};
+import { SubclassBase } from "./ClassBase";
 
 // 5e Subclasses
 
 // Arcane Trickster
-export const RogueArcaneTrickster: RogueSubclass = {
+export const RogueArcaneTrickster: SubclassBase = {
     subclassName: "Arcane Trickster",
     description: "The Arcane Trickster is a rogue who blends stealth and magic, using spells to enhance their thievery and deception. They are skilled in illusion and enchantment magic, allowing them to manipulate their surroundings and outsmart their foes.",
     casterType: "ThirdCasting",
@@ -64,7 +53,7 @@ export const RogueArcaneTrickster: RogueSubclass = {
 //Custom Subclasses
 
 //Memory Thief
-export const RogueMemoryThief: RogueSubclass = {
+export const RogueMemoryThief: SubclassBase = {
     subclassName: "Memory Thief Rogue",
     description: "The intricate processes of the mind are no mystery to you. Everything movement, twitch, or glance can be a gateway to information that is often only found between two people. You would rather not get your hands dirty, and have specialized in the best magic to do so.",
     features: [

@@ -16,6 +16,19 @@ export interface ClassBase {
     multiWeaponProf?: string[];
 };
 
+export interface SubclassBase {
+    subclassName: string;
+    description: string;
+    casterType?: string;
+    features: {
+        level: number;
+        subclassFeature1: string[];
+        subclassFeature2?: string[];
+        subclassFeature3?: string[];
+    }[]
+    subclassCredits: string;
+}
+
 export interface ProfBonus {
     level: number;
     profBonus: number;
