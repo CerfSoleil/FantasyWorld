@@ -1,0 +1,17 @@
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.class-card {
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.class-card:hover {
+  transform: scale(1.05);
+}
