@@ -6,6 +6,7 @@ import { subclassMap } from '../ClassesData/AllSubclasses';
 import { SubclassBase } from '../ClassesData/ClassBase';
 
 import "../../styles/ClassFeatures.css";
+import { ClassCredits } from '../ClassesData/Bard';
 
 interface FeatureBlockProps {
   level: number;
@@ -108,8 +109,6 @@ if (classLower && classLevelMap[classLower]) {
   });
 }
 
-
-
 console.log("Requested subclass:", subclassName);
 
 console.log ("This should read the current subclass features:", subclassFeatures);
@@ -134,7 +133,13 @@ if (subclassFeatures && Array.isArray(subclassFeatures.features)) {
   });
 }
 
+let credits = "";
 
+if (subclassName === undefined) {
+  credits = ClassCredits;
+} else if (subclassFeatures !== undefined) {
+  credits = `${ClassCredits}\n${subclassFeatures.subclassCredits}`;
+}
 
 
   return (
@@ -154,6 +159,14 @@ if (subclassFeatures && Array.isArray(subclassFeatures.features)) {
 
         return <FeatureBlock key={level} level={level} features={features} />;
       })}
+      <p className="credits">
+  {credits.split("\n").map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ))}
+</p>
     </div>
   );
 };
