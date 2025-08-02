@@ -2,7 +2,7 @@ export interface ClassBase {
     className: string;
     hitDie: string;
     description: string;
-    castingType?: string;
+    casterType?: string;
     castingAbility?: string;
     primaryAbility: string;
     savingThrowProf: string[];

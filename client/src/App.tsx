@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import CharacterCreation from './pages/CharacterCreation';
 
 import Classes from './pages/Classes';
+import ClassDetailsPage from './pages/ClassDetails';
 import Species from './pages/Species';
 import Origins from './pages/Origins';
 
@@ -25,6 +26,8 @@ function App() {
             {/* Character Creation */}
             <Route path="/character-creation" element={<CharacterCreation />} />
             <Route path="/classes" element={<Classes />} />
+            <Route path="/class/:className" element={<ClassDetailsPage />} />
+            <Route path="/class/:className/:subclassId" element={<ClassDetailsPage />} />
             <Route path="/species" element={<Species />} />
             <Route path="/origins" element={<Origins />} />
             {/* Lore */}

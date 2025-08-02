@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { allClasses } from "../ClassesData/AllClasses";
+import { allClassCards } from "../ClassesData/AllClasses";
 import { ClassBase } from "../ClassesData/ClassBase";
 
 import "../../styles/ClassCard.css"
@@ -14,7 +14,7 @@ const ClassCards: React.FC = () => {
 
   return (
     <div className="class-grid">
-      {allClasses.map((classData: ClassBase) => (
+      {allClassCards.map((classData: ClassBase) => (
         <div
           key={classData.className}
           className="class-card"

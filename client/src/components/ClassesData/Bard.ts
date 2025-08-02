@@ -10,7 +10,7 @@ export const bardClass: ClassBase = {
     className: "Bard",
     hitDie: "d8",
     description: "Bards are versatile spellcasters and performers, using their musical talents to inspire allies and manipulate foes. They can cast spells, heal, and provide support in various ways. Bards are known for their charisma and ability to charm others.",
-    castingType: "FullCasting",
+    casterType: "FullCasting",
     primaryAbility: "Charisma",
     savingThrowProf: ["Dexterity", "Charisma"],
     skillProf: ["Choose 3"],
