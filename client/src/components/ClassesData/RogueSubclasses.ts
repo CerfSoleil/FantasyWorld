@@ -51,6 +51,50 @@ export const RogueArcaneTrickster: SubclassBase = {
     subclassCredits: "This subclass belongs to Dungeons & Dragons 5th Edition and Wizards of the Coast."
 };
 
+// Assassin
+export const RogueAssassin: SubclassBase = {
+    subclassName: "Assassin",
+    description: "An Assassin's training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies.",
+    features: [
+        {
+            level: 3,
+            subclassFeature1: ["Assassinate",
+                `You're adept at ambushing a target, granting you the following benefits.`,
+                "Initiative.",
+                `You're adept at ambushing a target, granting you the following benefits.`,
+                "Surprising Strikes.",
+                `During the first round of each combat, you have Advantage on attack rolls against any creature that hasn't taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon's type equal to your Rogue level.`
+            ],
+            subclassFeature2: ["Assassin's Tools",
+                `You gain a Disguise Kit and a Poisoner's Kit, and you have proficiency with them.`
+            ]
+        },
+        {
+            level: 9,
+            subclassFeature1: ["Infiltration Expertise",
+                `You are expert at the following techniques that aid your infiltrations.`,
+                "Masterful Mimicry",
+                `You can unerringly mimic another person's speech, handwriting, or both if you have spent at least 1 hour studying them.`,
+                "Roving Aim",
+                `You can unerringly mimic another person's speech, handwriting, or both if you have spent at least 1 hour studying them.`
+            ]
+        },
+        {
+            level: 13,
+            subclassFeature1: ["Envenom Weapons",
+                `When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails the saving throw. This damage ignores Resistance to Poison damage.`
+            ]
+        },
+        {
+            level: 17,
+            subclassFeature1: ["Death Strike",
+                `When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus), or the attack's damage is doubled against the target.`
+            ]
+        }
+    ],
+    subclassCredits: "This subclass belongs to Dungeons & Dragons 5th Edition and Wizards of the Coast."
+}
+
 //Custom Subclasses
 
 //Memory Thief
