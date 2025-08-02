@@ -88,5 +88,5 @@ export const RogueMemoryThief: SubclassBase = {
             ]
         }
     ],
-    subclassCredits: "This subclas was created by BlackFingerCult"
+    subclassCredits: "This subclass was created by BlackFingerCult."
 };
