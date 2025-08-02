@@ -3,7 +3,7 @@ import { ClassBase } from "./ClassBase";
 export const rogueClass: ClassBase = {
     className: "Rogue",
     hitDie: "d8",
-    description: "",
+    description: "Rogues are stealthy and skilled, striking precisely with Sneak Attack and excelling at infiltration, traps, and deception. They specialize in cunning tactics and mobility over brute strength.",
     primaryAbility: "Dexterity",
     savingThrowProf: ["Dexterity", "Intelligence"],
     skillProf: ["Choose 4", "Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Persuasion, Sleight of Hand, or Stealth"],
