@@ -90,5 +90,3 @@ export const RogueMemoryThief: SubclassBase = {
     ],
     subclassCredits: "This subclas was created by BlackFingerCult"
 };
-
-export const allRogueSubclasses: SubclassBase[] = [RogueArcaneTrickster, RogueMemoryThief];

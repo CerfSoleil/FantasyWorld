@@ -70,5 +70,3 @@ export const BardSynesthesia: SubclassBase = {
     ],
     subclassCredits: "This subclass was created by BlackFingerCult."
 };
-
-export const allBardSubclasses: SubclassBase[] = [BardCulture, BardSynesthesia];
