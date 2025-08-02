@@ -27,7 +27,7 @@ function App() {
             <Route path="/character-creation" element={<CharacterCreation />} />
             <Route path="/classes" element={<Classes />} />
             <Route path="/class/:className" element={<ClassDetailsPage />} />
-            <Route path="/class/:className/:subclassId?" element={<ClassDetailsPage />} />
+            <Route path="/class/:className/:subclassName" element={<ClassDetailsPage />} />
             <Route path="/species" element={<Species />} />
             <Route path="/origins" element={<Origins />} />
             {/* Lore */}

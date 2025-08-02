@@ -1,4 +1,5 @@
 // ClassesData/AllSubclasses.ts
+// This needs to be updated for further subclasses
 import { BardCulture, BardSynesthesia } from "./BardSubclasses";
 import { RogueArcaneTrickster, RogueMemoryThief } from "./RogueSubclasses";
 import { SubclassBase } from "./ClassBase";
