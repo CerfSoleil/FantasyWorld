@@ -21,7 +21,7 @@ const ClassCards: React.FC = () => {
           onClick={() => handleClick(classData.className)}
         >
           <h2>{classData.className}</h2>
-          <p><strong>Hit Die:</strong> {classData.hitDie}</p>
+          <p><strong>Hit Die:</strong> d{classData.hitDie}</p>
           <p><strong>Description:</strong> {classData.description}</p>
           <p><strong>Primary Ability:</strong> {classData.primaryAbility}</p>
         </div>
