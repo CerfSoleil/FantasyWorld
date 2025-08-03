@@ -5,7 +5,7 @@ export const ClassCredits = "This class was originally concepted and created by 
 export const roninClass: ClassBase = {
     className: "Ronin",
     hitDie: 8,
-    description: "",
+    description: "A warrior that capitalizes on their peak physical condition and strict discipline to be a sturdy powerhouse in battle. Maintains specializations that will always be helpful to a team.",
     primaryAbility: "Strength or Dexterity",
     savingThrowProf: ["Constitution", "Wisdom"],
     skillProf: ["Choose 2", "Acrobatics, Athletics, History, Insight, Intimidation, Perception, Persuasion, Stealth"],
