@@ -95,11 +95,94 @@ export const RogueAssassin: SubclassBase = {
     subclassCredits: "This subclass belongs to Dungeons & Dragons 5th Edition and Wizards of the Coast."
 }
 
+// Inquisitive
+export const RogueInquisitive: SubclassBase = {
+    subclassName: "Inquisitive",
+    description: "As an archetypal Inquisitive, you excel at rooting out secrets and unraveling mysteries. You rely on your sharp eye for detail, but also on your finely honed ability to read the words and deeds of other creatures to determine their true intent. You excel at defeating creatures that hide among and prey upon ordinary folk, and your mastery of lore and your keen deductions make you well equipped to expose and end hidden evils.",
+    features: [
+        {
+            level: 3,
+            subclassFeature1: ["Ear for Deceit",
+                `When you choose this archetype at 3rd level, you develop a talent for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8.`
+            ],
+            subclassFeature2: ["Eye For Detail",
+                `Starting at 3rd level, you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues.`
+            ],
+            subclassFeature3: ["Insightful Fighting",
+                `At 3rd level, you gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom (Insight) check against a creature you can see that isn't incapacitated, contested by the target's Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it.
+                This benefit lasts for 1 minute or until you successfully use this feature against a different target.`
+            ]
+        },
+        {
+            level: 9,
+            subclassFeature1: ["Steady Eye",
+                `Starting at 9th level, you have advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn.`
+            ]
+        },
+        {
+            level: 13,
+            subclassFeature1: ["Unerring Eye",
+                `Beginning at 13th level, your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you, provided you aren't blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.
+                You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.`
+            ]
+        },
+        {
+            level: 17,
+            subclassFeature1: ["Eye for Weakness",
+                `At 17th level, you learn to exploit a creature's weaknesses by carefully studying its tactics and movement. While your Insightful Fighting feature applies to a creature, your Sneak Attack damage against that creature increases by 3d6.`
+            ]
+        }
+    ],
+    subclassCredits: "This subclass belongs to Dungeons & Dragons 5th Edition and Wizards of the Coast."
+};
+
+export const RogueMastermind: SubclassBase = {
+    subclassName: "Mastermind",
+    description: "Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.",
+    features: [
+        {
+            level: 3,
+            subclassFeature1: ["Master of Intrigue",
+                `When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.
+                Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language.`
+            ],
+            subclassFeature2: ["Master of Tactics",
+                `Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you.`
+            ]
+        },
+        {
+            level: 9,
+            subclassFeature1: ["Insightful Manipulator",
+                `Starting at 9th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:
+                Intelligence Score
+                Wisdom Score
+                Charisma Score
+                Class Levels (if any)
+                At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any.`
+            ]
+        },
+        {
+            level: 13,
+            subclassFeature1: ["Misdirection",
+                `Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you.`
+            ]
+        },
+        {
+            level: 17,
+            subclassFeature1: ["Soul of Deceit",
+                `Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by succeeding on a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.
+                Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic.`
+            ]
+        }
+    ],
+    subclassCredits: "This subclass belongs to Dungeons & Dragons 5th Edition and Wizards of the Coast."
+}
+
 //Custom Subclasses
 
 //Memory Thief
 export const RogueMemoryThief: SubclassBase = {
-    subclassName: "Memory Thief Rogue",
+    subclassName: "Memory Thief",
     description: "The intricate processes of the mind are no mystery to you. Everything movement, twitch, or glance can be a gateway to information that is often only found between two people. You would rather not get your hands dirty, and have specialized in the best magic to do so.",
     features: [
         {
