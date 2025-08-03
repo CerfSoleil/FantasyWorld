@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import planetComponents from "../components/PlanetComponents/Esteria/planetComponent";
+import planetComponents from "../components/PlanetComponents/Esteria/regionComponent";
 
 export default function RegionPage() {
   const { planetName, regionName } = useParams();
