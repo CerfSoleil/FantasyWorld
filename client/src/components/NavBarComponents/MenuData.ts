@@ -43,8 +43,8 @@ export const menuData: MenuItem[] = [
             name: "Esteria", 
             children: [
                 { name: "Aetember" },
-                { name: "Cazro El"},
-                { name: "El Castim"},
+                { name: "Cazro"},
+                { name: "Castim"},
                 { name: "Kaito"},
                 { name: "Nollun" },
                 { name: "Sera"},
