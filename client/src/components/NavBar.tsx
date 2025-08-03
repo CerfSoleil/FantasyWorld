@@ -1,20 +1,14 @@
-//This should have the following categories:
+import React from "react";
+import { menuData } from "./NavBarComponents/MenuData";
+import { DropdownItem } from "./NavBarComponents/DropdownItem";
+import "../styles/Navbar.css";
 
-// Character Creation
-/// Classes
-/// Races (This needs a toggle for the planet players are on.)
-/// Origins
-
-// Lore
-/// Planets
-/// Planes
-//// Continent
-///// Country
-
-// Gods
-/// All Gods
-/// Gods by Pillar
-
-// Maps
-
-// Players
+export const Navbar: React.FC = () => {
+  return (
+    <nav className="navbar">
+      {menuData.map((item, index) => (
+        <DropdownItem key={index} item={item} isTopLevel={true} />
+      ))}
+    </nav>
+  );
+};
