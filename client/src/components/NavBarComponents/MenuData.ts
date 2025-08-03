@@ -39,7 +39,17 @@ export const menuData: MenuItem[] = [
       {
         name: "Planets",
         children: [
-          { name: "Esteria" },
+          { 
+            name: "Esteria", 
+            children: [
+                { name: "Aetember" },
+                { name: "Cazro El"},
+                { name: "El Castim"},
+                { name: "Kaito"},
+                { name: "Nollun" },
+                { name: "Sera"},
+            ]
+          },
           { name: "Beluus" },
           { name: "Naraka" },
         ],

@@ -40,7 +40,7 @@ function App() {
             {/* Gods */}
             {/* Maps */}
             <Route path="/maps" element={<Maps />} />
-            <Route path="/maps/TheEye" element={<TheEyeMap />} />
+            <Route path="/maps/TheEyeMap" element={<TheEyeMap />} />
           </Routes>
         </main>
         {/* <Footer /> */}
