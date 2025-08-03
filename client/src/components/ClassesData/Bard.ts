@@ -8,7 +8,7 @@ export const ClassCredits = "This class belongs to Dungeons & Dragons 5th Editio
 
 export const bardClass: ClassBase = {
     className: "Bard",
-    hitDie: "d8",
+    hitDie: 8,
     description: "Bards are versatile spellcasters and performers, using their musical talents to inspire allies and manipulate foes. They can cast spells, heal, and provide support in various ways. Bards are known for their charisma and ability to charm others.",
     casterType: "FullCasting",
     castingAbility: "Charisma",
@@ -17,11 +17,11 @@ export const bardClass: ClassBase = {
     skillProf: ["Choose 3"],
     weaponProf: ["Simple Weapons"],
     toolProf: ["Choose 3 Musical Instruments"],
-    armorProf: ["Light Armor"],
+    armorProf: ["Light"],
     startingEquip: [["Leather Armor, 2x Dagger, Musical Instrument of your Choice, Entertainer's Pack, 19gp"], ["90gp"]],
     multiSkillProf: ["Choose 1"],
     multiToolProf: ["Choose one Musical Instrument"],
-    multiArmorProf: ["Light Armor"]
+    multiArmorProf: ["Light"]
 };  
 
 export interface BardLevelData {

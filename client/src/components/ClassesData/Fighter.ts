@@ -4,7 +4,7 @@ export const ClassCredits = "This class belongs to Dungeons & Dragons 5th Editio
 
 export const fighterClass: ClassBase = {
     className: "Fighter",
-    hitDie: "d10",
+    hitDie: 10,
     description: "Fighters are versatile, durable warriors with unmatched combat training and extra attacks. They can focus on raw power, tactical maneuvers, or even limited spellcasting, depending on their subclass.",
     primaryAbility: "Strength or Dexterity",
     savingThrowProf: ["Strength", "Constitution"],

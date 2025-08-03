@@ -2,18 +2,18 @@ import { ClassBase } from "./ClassBase";
 
 export const rogueClass: ClassBase = {
     className: "Rogue",
-    hitDie: "d8",
+    hitDie: 8,
     description: "Rogues are stealthy and skilled, striking precisely with Sneak Attack and excelling at infiltration, traps, and deception. They specialize in cunning tactics and mobility over brute strength.",
     primaryAbility: "Dexterity",
     savingThrowProf: ["Dexterity", "Intelligence"],
     skillProf: ["Choose 4", "Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Persuasion, Sleight of Hand, or Stealth"],
     weaponProf: ["Simple Weapons and Martial weapons with the Finesse or Light property."],
     toolProf: ["Thieves' Tools"],
-    armorProf: ["Light Armor"],
+    armorProf: ["Light"],
     startingEquip: [["Leather Armor, 2 Daggers, Shortsword, Shortbow, 20 Arrows, Quiver, Thieves' Tools, Burglar's Pack, and 8gp"], ["100gp"]],
     multiSkillProf: ["Choose 1", "Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Persuasion, Sleight of Hand, Stealth"],
     multiToolProf: ["Thieves' Tools"],
-    multiArmorProf: ["Light Armor"],
+    multiArmorProf: ["Light"],
 };
 
 export interface RogueLevelData {

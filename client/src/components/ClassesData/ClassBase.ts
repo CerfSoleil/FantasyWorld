@@ -1,6 +1,6 @@
 export interface ClassBase {
     className: string;
-    hitDie: string;
+    hitDie: number;
     description: string;
     casterType?: string;
     castingAbility?: string;
